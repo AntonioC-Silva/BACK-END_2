@@ -5,7 +5,7 @@ class Autor(models.Model):
     sobrenome = models.CharField(max_length=255)
     data_nasc = models.DateField(null=True, blank=True)
     naction = models.CharField(max_length=30, null=True, blank=True)
-    biogra = models.CharField(null=True, blank=True)
+    biogra = models.TextField(null=True, blank=True)
 
     def __str__(self):
         return f"{self.nome} {self.sobrenome}"
